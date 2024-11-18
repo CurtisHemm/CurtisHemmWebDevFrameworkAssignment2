@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "singularName": "game",
+    "pluralName": "games",
+    "displayName": "game"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gameName": {
+      "type": "string"
+    },
+    "gameDesc": {
+      "type": "text"
+    },
+    "gameSteamLink": {
+      "type": "string"
+    },
+    "gameImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "isFavoriteGame": {
+      "type": "boolean"
+    },
+    "gameHoursPlayed": {
+      "type": "decimal"
+    },
+    "gameAchievements": {
+      "type": "string"
+    }
+  }
+}

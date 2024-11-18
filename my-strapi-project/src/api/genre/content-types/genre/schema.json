@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "genres",
+  "info": {
+    "singularName": "genre",
+    "pluralName": "genres",
+    "displayName": "genre"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "genreName": {
+      "type": "string"
+    },
+    "genreDesc": {
+      "type": "text"
+    },
+    "isFavorite": {
+      "type": "boolean"
+    },
+    "genreImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "genreSteamLink": {
+      "type": "string"
+    },
+    "favouriteGenreGame": {
+      "type": "string"
+    }
+  }
+}
