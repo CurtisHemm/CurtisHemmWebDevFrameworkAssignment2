@@ -10,19 +10,30 @@ export default function Genre({ genreList }) {
     return (
         <>
             <div>
-                <p>Test</p>
-                <ul>
+                <p>A list of Game Genres I enjoy</p>
+                <div id="grid-container" class="grid-container">
                 {genreList.data.map((exp, index) => (
+                    <div class="card2">
+                    <div class="card-body">
+                    <div class="productText">
                     <li key={index}>
-                        <h1>Name: {exp.genreName}</h1>
+                        <h1>Name: <a href={exp.genreSteamLink} class="linkColor">{exp.genreName}</a></h1>
+                        <br></br>
                         <h3>Genre Desc: {exp.genreDesc}</h3>
-                        <h3>Steam Link: {exp.genreSteamLink}</h3>
-                        <h3>Favourite Game From Genre: {exp.favouriteGenreGame}</h3>
-                        <h3>Is one of my favorites: {exp.isFavorite ? "yes" : "no"}</h3>
-                        <img src={"http://localhost:1337" + exp.genreImage?.url} />
+                        <br></br>
+                        <h3>Is one of my favorites: {exp.isFavorite ? "Yes" : "No"}</h3>
+                        <br></br>
+                        <img src={"http://localhost:1337" + exp.genreImage?.url} class="image"/>
+                        <br></br>
+                        <h3>Favourite Game From Genre: <a href={exp.favouriteGenreGameSteam}>{exp.favouriteGenreGame}</a></h3>
                     </li>
+                    </div>
+                    </div>
+                    </div>
+                    
                 ))}
-                </ul>
+                </div>
+                
             </div>
         </>
     )

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "genre",
     "pluralName": "genres",
-    "displayName": "genre"
+    "displayName": "genre",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,19 +22,23 @@
       "type": "boolean"
     },
     "genreImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "genreSteamLink": {
       "type": "string"
     },
     "favouriteGenreGame": {
+      "type": "string"
+    },
+    "favouriteGenreGameSteam": {
       "type": "string"
     }
   }

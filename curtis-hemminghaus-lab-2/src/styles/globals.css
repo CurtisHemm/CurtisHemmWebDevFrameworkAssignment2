@@ -40,3 +40,47 @@ a {
     color-scheme: dark;
   }
 }
+
+.linkColor {
+  color: blue;
+  text-decoration: none; 
+}
+.productText {
+  width: 75%; 
+  padding: 12px;
+}
+
+.card-body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+}
+
+
+.card2 {
+  width: 100%; 
+  box-sizing: border-box; 
+  background-color: lightgreen;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border: 2px aquamarine; 
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.image {
+  width: 100%; 
+}

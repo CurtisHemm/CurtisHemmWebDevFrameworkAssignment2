@@ -403,6 +403,7 @@ export interface ApiGameGame extends Struct.CollectionTypeSchema {
 export interface ApiGenreGenre extends Struct.CollectionTypeSchema {
   collectionName: 'genres';
   info: {
+    description: '';
     displayName: 'genre';
     pluralName: 'genres';
     singularName: 'genre';
@@ -415,6 +416,7 @@ export interface ApiGenreGenre extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     favouriteGenreGame: Schema.Attribute.String;
+    favouriteGenreGameSteam: Schema.Attribute.String;
     genreDesc: Schema.Attribute.Text;
     genreImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
