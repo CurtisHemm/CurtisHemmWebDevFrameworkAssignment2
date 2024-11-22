@@ -10,9 +10,9 @@ function Header(props) {
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/genre">Liked Genres</a></li>
-          <li><a href="/services">Favorite Genres</a></li>
-          <li><a href="/contact">Liked Games</a></li>
-          <li><a href="/contact">Favorite Games</a></li>
+          <li><a href="/">Favorite Genres</a></li>
+          <li><a href="/game">Liked Games</a></li>
+          <li><a href="/">Favorite Games</a></li>
         </ul>
       </nav>
     </header>
