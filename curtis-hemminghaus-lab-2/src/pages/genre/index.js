@@ -17,9 +17,9 @@ export default function Genre({ genreList }) {
                     <div class="card-body">
                     <div class="productText">
                     <li key={index}>
-                        <h1>Name: <a href={exp.genreSteamLink} class="linkColor">{exp.genreName}</a></h1>
+                        <h1><a href={exp.genreSteamLink} class="linkColor">{exp.genreName}</a></h1>
                         <br></br>
-                        <h3>Genre Desc: {exp.genreDesc}</h3>
+                        <h3>{exp.genreDesc}</h3>
                         <br></br>
                         <h3>Is one of my favorites: {exp.isFavorite ? "Yes" : "No"}</h3>
                         <br></br>

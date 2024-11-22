@@ -10,17 +10,17 @@ export const fetchGenreList = async () => {
         console.log(response.data)
         return response.data
     }  catch (error) {
-        console.error("Error in fetching experienceList: " + error)
+        console.error("Error in fetching genreList: " + error)
     }
 }
 
 export const fetchGameList = async () => {
     try {
-        const response = await axios.get(STRAPI_URL + "genres?populate=gameImage")
+        const response = await axios.get(STRAPI_URL + "games?populate=gameImage")
         console.log("---------Axios Response List---------")
         console.log(response.data)
         return response.data
     }  catch (error) {
-        console.error("Error in fetching experienceList: " + error)
+        console.error("Error in fetching gameList: " + error)
     }
 }

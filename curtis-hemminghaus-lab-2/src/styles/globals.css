@@ -1,6 +1,8 @@
 :root {
-  --background: #ffffff;
+  --background: #838d68eb;
   --foreground: #171717;
+  --navbar: #333;
+  --navbarText: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,8 +88,8 @@ li {
 }
 
 .header {
-  background-color: #333;
-  color: white;
+  background-color: var(--navbar);
+  color: var(--navbarText);
   padding: 10px 20px;
 }
 
@@ -118,4 +120,27 @@ li {
 
 .nav ul li a:hover {
   text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  min-height: 50vh; 
+  padding: 20px;
+  width: 40%;
+  position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(50%, 0%);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--navbar);
+  color: var(--navbarText);
+  text-align: center;
 }
