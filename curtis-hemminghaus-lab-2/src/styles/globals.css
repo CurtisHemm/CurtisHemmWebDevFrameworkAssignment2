@@ -84,3 +84,38 @@ li {
 .image {
   width: 100%; 
 }
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
