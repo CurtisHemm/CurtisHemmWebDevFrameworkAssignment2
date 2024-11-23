@@ -1,5 +1,7 @@
 import { fetchGameList } from "../../lib/strapi"
 
+const gamesPerPage = 1;
+
 export async function getStaticProps() {
     const gameList = await fetchGameList();
     return {

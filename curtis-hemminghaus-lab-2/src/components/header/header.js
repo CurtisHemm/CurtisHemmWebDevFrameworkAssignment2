@@ -10,7 +10,7 @@ function Header(props) {
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/genre">Liked Genres</a></li>
-          <li><a href="/">Favorite Genres</a></li>
+          <li><a href="/favoriteGenre">Favorite Genres</a></li>
           <li><a href="/game">Liked Games</a></li>
           <li><a href="/favoriteGame">Favorite Games</a></li>
         </ul>
