@@ -144,3 +144,11 @@ li {
   color: var(--navbarText);
   text-align: center;
 }
+
+.prev {
+  margin-right: 10px;
+}
+
+.next {
+  margin-left: 10px;
+}

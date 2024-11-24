@@ -1,6 +1,3 @@
-
-
-
 function Header(props) {
   return (
     <>
@@ -10,9 +7,9 @@ function Header(props) {
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/genre">Liked Genres</a></li>
-          <li><a href="/favoriteGenre">Favorite Genres</a></li>
+          <li><a href="/favoriteGenre/1">Favorite Genres</a></li>
           <li><a href="/game">Liked Games</a></li>
-          <li><a href="/favoriteGame">Favorite Games</a></li>
+          <li><a href="/favoriteGame/1">Favorite Games</a></li>
         </ul>
       </nav>
     </header>
@@ -22,14 +19,5 @@ function Header(props) {
 
 export default Header;
 
-
-
-// export default function Header() {
-//     return (
-//         <>
-//         <h1>This is my header</h1>
-//         </>
-//     )
-// }
 
 

@@ -10,7 +10,7 @@ export default function Game({ gameList }) {
     return (
         <>
             <div>
-                <p>A list of Games I enjoy</p>
+                <h1>A list of Games I enjoy</h1>
                 <div id="grid-container" class="grid-container">
                 {gameList.data.map((exp, index) => (
                     <div class="card2">
