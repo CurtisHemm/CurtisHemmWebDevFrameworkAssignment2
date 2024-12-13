@@ -5,7 +5,8 @@ const STRAPI_URL = process.env.STRAPI_API_URL
 
 export const fetchGenreList = async () => {
     try {
-        const response = await axios.get(STRAPI_URL + "genres?populate=genreImage")
+        // const response = await axios.get(STRAPI_URL + "genres?populate=genreImage")
+        const response = await axios.get("http://localhost:3000/api/genre")
         console.log("---------Axios Response List---------")
         console.log(response.data)
         return response.data
@@ -16,7 +17,8 @@ export const fetchGenreList = async () => {
 
 export const fetchGameList = async () => {
     try {
-        const response = await axios.get(STRAPI_URL + "games?populate=gameImage")
+        // const response = await axios.get(STRAPI_URL + "games?populate=gameImage")
+        const response = await axios.get("http://localhost:3000/api/game")
         console.log("---------Axios Response List---------")
         console.log(response.data)
         return response.data
